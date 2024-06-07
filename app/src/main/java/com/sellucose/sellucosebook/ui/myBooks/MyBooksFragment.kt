@@ -4,16 +4,19 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.sellucose.sellucosebook.repository.BookRepository
 import com.sellucose.sellucosebook.databinding.FragmentMybooksBinding
 import com.sellucose.sellucosebook.R
+import kotlinx.coroutines.launch
 
 
 class MyBooksFragment : Fragment() {
@@ -99,15 +102,22 @@ class MyBooksFragment : Fragment() {
         }
     }
 
+    // File: MyBooksFragment.kt
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == REQUEST_CODE_PICK_EPUB_FILE && resultCode == AppCompatActivity.RESULT_OK) {
             val uri = data?.data
             if (uri != null) {
+                Log.d("MyBooksFragment", "URI received: $uri")
                 val bookRepository = BookRepository()
-                val book = bookRepository.getBook(uri)
-                myBooksViewModel.books.add(book)
-                myBooksAdapter.submitList(myBooksViewModel.books.toList())
-                myBooksAdapter.notifyDataSetChanged()
+                lifecycleScope.launch {
+                    val book = bookRepository.getBook(requireContext(), uri)
+                    if (book != null) {
+                        Log.d("MyBooksFragment", "Book received: ${book.title}")
+                        myBooksViewModel.books.add(book)
+                        myBooksAdapter.submitList(myBooksViewModel.books.toList())
+                        myBooksAdapter.notifyDataSetChanged()
+                    }
+                }
             }
         }
     }
