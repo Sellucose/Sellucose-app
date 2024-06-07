@@ -78,6 +78,8 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
     implementation ("com.squareup.retrofit2:converter-jackson:2.9.0")
@@ -91,10 +93,11 @@ dependencies {
     implementation("org.slf4j:slf4j-android:1.7.25")
 
     // Readium
-    val readium_version = "3.0.0-beta.1"
+    val readium_version = "2.4.0"
     implementation("org.readium.kotlin-toolkit:readium-shared:$readium_version")
     implementation("org.readium.kotlin-toolkit:readium-streamer:$readium_version")
     implementation("org.readium.kotlin-toolkit:readium-navigator:$readium_version")
+    implementation("org.readium.kotlin-toolkit:readium-navigator-media2:$readium_version")
     implementation("org.readium.kotlin-toolkit:readium-opds:$readium_version")
     implementation("org.readium.kotlin-toolkit:readium-lcp:$readium_version")
 
@@ -102,5 +105,9 @@ dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
     // JUnit
     androidTestImplementation("junit:junit:4.12")
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
 }
