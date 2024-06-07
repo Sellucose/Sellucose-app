@@ -20,6 +20,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SellucoseBook"
         android:name=".repository.MyApplication"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31" >
         <activity
             android:name=".MainActivity"
@@ -32,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.myBooks.BookReaderActivity" />
     </application>
 
 </manifest>
