@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation.data.pref
+package com.sellucose.sellucosebook.data.pref
 
 import android.content.Context
 import androidx.datastore.core.DataStore

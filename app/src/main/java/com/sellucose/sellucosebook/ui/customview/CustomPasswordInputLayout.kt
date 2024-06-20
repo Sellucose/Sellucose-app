@@ -16,7 +16,7 @@ class CustomPasswordInputLayout @JvmOverloads constructor(
     init {
         editText?.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                validatePassword()
+                checkPasswordValidity()
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -29,7 +29,7 @@ class CustomPasswordInputLayout @JvmOverloads constructor(
         })
     }
 
-    fun validatePassword(): Boolean {
+    fun checkPasswordValidity(): Boolean {
         val password = editText?.text.toString()
         val isPasswordValid = password.length >= 8
         errorMessage = if (isPasswordValid) {

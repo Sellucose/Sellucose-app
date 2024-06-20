@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation.data.pref
+package com.sellucose.sellucosebook.data.pref
 
 data class  UserModel(
     val keyword: String,

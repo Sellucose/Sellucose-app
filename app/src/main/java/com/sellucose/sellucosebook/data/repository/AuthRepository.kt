@@ -1,10 +1,10 @@
-package com.dicoding.picodiploma.loginwithanimation.data.repository
+package com.sellucose.sellucosebook.data.repository
 
-import com.dicoding.picodiploma.loginwithanimation.data.pref.UserModel
-import com.dicoding.picodiploma.loginwithanimation.data.pref.UserPreference
-import com.dicoding.picodiploma.loginwithanimation.data.remote.auth.AuthService
-import com.dicoding.picodiploma.loginwithanimation.data.remote.body.LoginBody
-import com.dicoding.picodiploma.loginwithanimation.data.remote.body.RegisterBody
+import com.sellucose.sellucosebook.data.pref.UserModel
+import com.sellucose.sellucosebook.data.pref.UserPreference
+import com.sellucose.sellucosebook.data.remote.auth.AuthService
+import com.sellucose.sellucosebook.data.remote.body.LoginBody
+import com.sellucose.sellucosebook.data.remote.body.RegisterBody
 import kotlinx.coroutines.flow.Flow
 
 class AuthRepository(

@@ -1,7 +1,7 @@
-package com.dicoding.picodiploma.loginwithanimation.data.remote.auth
+package com.sellucose.sellucosebook.data.remote.auth
 
-import com.dicoding.picodiploma.loginwithanimation.data.remote.body.LoginBody
-import com.dicoding.picodiploma.loginwithanimation.data.remote.body.RegisterBody
+import com.sellucose.sellucosebook.data.remote.body.LoginBody
+import com.sellucose.sellucosebook.data.remote.body.RegisterBody
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.POST

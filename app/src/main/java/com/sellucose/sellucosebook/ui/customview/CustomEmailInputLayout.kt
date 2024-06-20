@@ -9,9 +9,9 @@ class CustomEmailInputLayout @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : TextInputLayout(context, attrs, defStyleAttr) {
 
-    fun validateEmail(): Boolean {
+    fun checkEmailValidity(): Boolean {
         val email = editText?.text.toString()
-        return if (!email.endsWith("@dicoding.com")) {
+        return if (!email.endsWith("@gmail.com")) {
             error = context.getString(R.string.email_error)
             false
         } else {

@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation.data.remote.body
+package com.sellucose.sellucosebook.data.remote.body
 
 
 data class LoginBody(
