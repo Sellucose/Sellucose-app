@@ -12,4 +12,61 @@
     <string name="add_file_book">add file book</string>
     <string name="book_title">Book Title</string>
     <string name="author">Author</string>
+    <string name="cari_buku">cari buku</string>
+    <string name="ebook">Ebook</string>
+    <string name="icon_stars">icon stars</string>
+    <string name="rate">4,0</string>
+    <string name="rank">1</string>
+    <string name="paragraf">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum vitae est eu porta. Sed sollicitudin vitae mi vel posuere. Donec vitae neque suscipit, lacinia lorem eget, facilisis nulla. Aenean euismod in nulla vel vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam egestas enim a varius malesuada. Vivamus sagittis felis felis, non dapibus dui mollis vitae.
+
+        \n\nPraesent ultrices erat mi, vel consectetur elit consequat nec. Quisque fringilla convallis ante eget consectetur. Vestibulum eu tincidunt tellus. Pellentesque at consectetur sapien. Nulla nec ligula dignissim, congue enim bibendum, pretium sapien. Cras mattis neque eleifend ipsum facilisis, bibendum sollicitudin ipsum feugiat. Maecenas semper nunc quis fringilla commodo.
+
+        \n\nVestibulum cursus eget mauris et mollis. Mauris a mauris euismod, aliquam leo vulputate, efficitur lorem. Sed eget ante ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec gravida diam mauris, id tempus ipsum condimentum ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent dolor diam, tincidunt eget ex ac, molestie blandit ante. Pellentesque pretium ex et libero maximus scelerisque a at est. Praesent a tortor mollis, eleifend quam et, condimentum metus.
+
+        \n\nMaecenas dapibus, nunc a placerat ornare, elit est venenatis erat, sit amet imperdiet sapien tellus nec enim. Etiam id augue erat. Nam ut nunc aliquet, auctor felis vitae, ultrices purus. Etiam dignissim lacus sed augue auctor, non efficitur libero auctor. Suspendisse nec mi dui. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+        \n\nIn a molestie justo. Quisque faucibus ex pellentesque tellus rhoncus blandit. Quisque lorem dui, volutpat non tellus at, dignissim volutpat nulla. Vivamus congue, tortor at consequat semper, dui lorem euismod dui, in dapibus quam nisl id mauris. In hac habitasse platea dictumst. Vivamus a vehicula erat. Donec vulputate ultricies turpis, nec pulvinar est porta ac. Donec sit amet elementum urna. In mauris libero, posuere a turpis vel, pharetra bibendum justo. Sed bibendum ac lectus at volutpat. Duis tincidunt leo dignissim elit eleifend, id rhoncus libero posuere. Cras dapibus, nunc et semper molestie, nunc quam cursus ipsum, et mollis magna sapien in elit. Etiam nec eleifend orci. Phasellus sed porta ex.
+
+        \n\nDonec non volutpat sem, in consequat risus. Nulla viverra, quam non vehicula laoreet, ex ante gravida mi, quis feugiat dolor ipsum ut dui. Mauris condimentum porttitor mauris et tincidunt. In ut erat nunc. Mauris mauris mi, fringilla vitae consequat ac, ullamcorper nec lectus. Donec ligula augue, rhoncus sed dolor vitae, sagittis bibendum elit. Cras sed nunc vitae lectus eleifend maximus. Cras dignissim faucibus felis, vitae pretium quam pharetra in. Ut nec ex sem. Donec a gravida velit. Ut accumsan mi non leo condimentum accumsan. Vivamus scelerisque erat nec ex eleifend facilisis vel sit amet sapien. Duis nec suscipit ex, vitae semper velit. Nulla lacinia, eros eu accumsan sagittis, ex quam vestibulum nibh, nec blandit lacus quam at diam. Pellentesque in augue laoreet, imperdiet magna ut, sodales ante. Phasellus at enim sed elit porta luctus.
+
+        \n\nNullam non ex eleifend, bibendum tellus non, volutpat leo. In ac rutrum mauris. Nunc vitae augue in nisi dapibus sollicitudin at vitae lacus. Sed posuere feugiat orci, vitae rhoncus ante faucibus sed. Donec vitae hendrerit nisi. Cras neque dolor, pulvinar vel dui vel, dictum hendrerit justo. Ut tristique ligula vitae leo placerat elementum. Cras imperdiet leo enim. Praesent ac porttitor quam, in fermentum felis. Nulla dictum sagittis cursus. Donec ultrices felis vestibulum est congue, sit amet eleifend leo tincidunt. Quisque id est et lectus varius interdum. Nulla ac aliquam nunc. Aliquam id consectetur dolor.
+
+        \n\nFusce finibus enim ut dapibus egestas. Nullam eget velit nulla. Nullam tempus eleifend purus, eget semper est vestibulum ac. Aenean aliquam egestas ante at porta. Sed neque neque, hendrerit non dapibus in, convallis in massa. Suspendisse varius tellus nibh, quis posuere magna vehicula vel. Praesent malesuada nunc lacus, sed tristique orci porttitor ac. Pellentesque aliquam commodo sapien, mattis dictum nisl viverra vitae. Etiam molestie ante diam, in placerat metus efficitur at. Nulla a aliquet nisi. Pellentesque porta, diam in sodales consectetur, odio massa maximus sem, in semper nisi massa at ex. Cras mi neque, consectetur eget orci eu, condimentum maximus sem. Ut scelerisque posuere turpis in rhoncus. Mauris pulvinar auctor hendrerit.
+
+        \n\nMauris pellentesque et augue sit amet finibus. Fusce luctus, nibh varius rutrum congue, dui nibh scelerisque velit, in pellentesque tortor dolor eu sapien. Ut pulvinar ligula et sollicitudin volutpat. Fusce gravida, nisi vel vehicula consectetur, risus felis dapibus odio, at mattis metus augue scelerisque velit. Nam iaculis, nibh at maximus pharetra, tortor nibh aliquam mauris, eget imperdiet elit nibh non dolor. Nulla ac convallis turpis. Aliquam et placerat est. Praesent in risus a magna fringilla porttitor sagittis a ex. Nunc a porttitor magna. Donec sollicitudin eros in erat egestas porttitor. Cras hendrerit enim eu turpis elementum, a egestas eros condimentum. Duis ultricies neque ligula.
+
+        \n\nCurabitur orci justo, rhoncus at laoreet in, bibendum dignissim tellus. Proin egestas augue venenatis, feugiat tortor ac, vestibulum nibh. Cras at mauris ornare, egestas ante id, sagittis tellus. Nunc et sagittis quam. Phasellus interdum tempus tellus, in mattis eros mollis et. Nunc sollicitudin sem eget mi pharetra tempus. Duis tincidunt nunc id mi fermentum ultrices.
+    </string>
+
+    <string name="cover">cover</string>
+    <string name="refresh">Refresh</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_login_page">Login</string>
+    <string name="keyword">Username/Email</string>
+    <string name="email">Email</string>
+    <string name="email_error">Email must use @gmail.com or @yahoo.com or @mail.com</string>
+    <string name="name_error">Name cannot be empty</string>
+    <string name="password_error">Password must be more than 8 characters</string>
+    <string name="password">Password</string>
+    <string name="confirmation_password">Konfirmasi Password</string>
+    <string name="login">Login</string>
+    <string name="title_signup_page">Complete your data below</string>
+    <string name="name">Name</string>
+    <string name="signup">Sign Up</string>
+    <string name="title_welcome_page">Welcome to Sellucose!</string>
+    <string name="message_welcome_page">Want to read electronic novels and get AI book recommendations? Try Sellucose!</string>
 </resources>

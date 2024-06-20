@@ -1,4 +1,4 @@
-package com.sellucose.sellucosebook.repository
+package com.sellucose.sellucosebook.data.repository
 
 import android.app.Application
 import android.content.Context

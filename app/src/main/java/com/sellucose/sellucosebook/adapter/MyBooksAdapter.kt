@@ -58,7 +58,7 @@
 //    }
 //}
 
-package com.sellucose.sellucosebook.ui.myBooks
+package com.sellucose.sellucosebook.adapter
 
 import android.content.Intent
 import android.util.Log
@@ -71,6 +71,7 @@ import com.bumptech.glide.Glide
 import com.sellucose.sellucosebook.R
 import com.sellucose.sellucosebook.data.EpubBook
 import com.sellucose.sellucosebook.databinding.ItemMybookBinding
+import com.sellucose.sellucosebook.ui.myBooks.BookReaderActivity
 
 class MyBooksAdapter : ListAdapter<EpubBook, MyBooksAdapter.BookViewHolder>(EpubBookDiffCallback()) {
 

@@ -11,7 +11,7 @@
 //import android.webkit.WebViewClient
 //import androidx.appcompat.app.AppCompatActivity
 //import com.sellucose.sellucosebook.R
-//import com.sellucose.sellucosebook.repository.BookRepository
+//import com.sellucose.sellucosebook.repository.SavedBookRepository
 //import kotlinx.coroutines.CoroutineScope
 //import kotlinx.coroutines.Dispatchers
 //import kotlinx.coroutines.launch
@@ -56,7 +56,7 @@
 //        val epubUri = intent.getStringExtra(EXTRA_EPUB_PATH)
 //        if (epubUri != null) {
 //            CoroutineScope(Dispatchers.Main).launch {
-//                val bookRepository = BookRepository()
+//                val bookRepository = SavedBookRepository()
 //                val book = bookRepository.getBook(this@BookReaderActivity, Uri.parse(epubUri))
 //
 //                if (book != null) {
@@ -99,7 +99,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import com.sellucose.sellucosebook.R
-import com.sellucose.sellucosebook.repository.BookRepository
+import com.sellucose.sellucosebook.data.repository.BookRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

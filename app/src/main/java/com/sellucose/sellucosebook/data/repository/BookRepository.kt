@@ -177,7 +177,7 @@
 //    }
 //}
 
-package com.sellucose.sellucosebook.repository
+package com.sellucose.sellucosebook.data.repository
 
 import android.content.Context
 import android.graphics.Bitmap
