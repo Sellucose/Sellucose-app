@@ -1,8 +1,8 @@
-package com.dicoding.picodiploma.loginwithanimation.data.remote.book
+package com.sellucose.sellucosebook.data.remote.book
 
 import android.content.Context
-import com.dicoding.picodiploma.loginwithanimation.data.pref.UserPreference
-import com.dicoding.picodiploma.loginwithanimation.data.pref.dataStore
+import com.sellucose.sellucosebook.data.pref.UserPreference
+import com.sellucose.sellucosebook.data.pref.dataStore
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import okhttp3.Interceptor
@@ -11,8 +11,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object BookConfig {
-    fun getApiService(context: Context): BookService {
+object SavedBookConfig {
+    fun getApiService(context: Context): SavedBookService {
         val loggingInterceptor = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
         val pref = UserPreference.getInstance(context.dataStore)
         val authInterceptor = Interceptor { chain ->
@@ -32,6 +32,6 @@ object BookConfig {
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
-        return retrofit.create(BookService::class.java)
+        return retrofit.create(SavedBookService::class.java)
     }
 }

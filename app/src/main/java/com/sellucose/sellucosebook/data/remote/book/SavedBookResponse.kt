@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.loginwithanimation.data.remote.book
+package com.sellucose.sellucosebook.data.remote.book
 
 import com.google.gson.annotations.SerializedName
 

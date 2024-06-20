@@ -1,16 +1,11 @@
-package com.dicoding.picodiploma.loginwithanimation.data.remote.book
+package com.sellucose.sellucosebook.data.remote.book
 
 import retrofit2.Response
-import retrofit2.http.Body
-import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.Header
-import retrofit2.http.POST
-import retrofit2.http.PUT
-import retrofit2.http.Path
 import retrofit2.http.Query
 
-interface BookService {
+interface SavedBookService {
 
     @GET("saved")
     suspend fun getBooks(

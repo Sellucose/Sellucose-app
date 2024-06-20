@@ -13,9 +13,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import com.sellucose.sellucosebook.repository.BookRepository
 import com.sellucose.sellucosebook.databinding.FragmentMybooksBinding
 import com.sellucose.sellucosebook.R
+import com.sellucose.sellucosebook.adapter.MyBooksAdapter
+import com.sellucose.sellucosebook.data.repository.BookRepository
 import kotlinx.coroutines.launch
 
 
@@ -38,7 +39,7 @@ class MyBooksFragment : Fragment() {
         _binding = FragmentMybooksBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val toolbar = binding.toolbar
+        val toolbar = binding.toolbarMybooks
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
         toolbar.title = "My Books"
         setHasOptionsMenu(true)

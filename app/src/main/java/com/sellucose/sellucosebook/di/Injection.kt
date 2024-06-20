@@ -1,14 +1,14 @@
 package com.dicoding.picodiploma.loginwithanimation.di
 
 import android.content.Context
-import com.dicoding.picodiploma.loginwithanimation.data.repository.AuthRepository
-import com.dicoding.picodiploma.loginwithanimation.data.repository.BookRepository
-import com.dicoding.picodiploma.loginwithanimation.data.pref.UserPreference
-import com.dicoding.picodiploma.loginwithanimation.data.pref.dataStore
-import com.dicoding.picodiploma.loginwithanimation.data.remote.auth.AuthConfig
-import com.dicoding.picodiploma.loginwithanimation.data.remote.auth.AuthService
-import com.dicoding.picodiploma.loginwithanimation.data.remote.book.BookConfig
-import com.dicoding.picodiploma.loginwithanimation.data.remote.book.BookService
+import com.sellucose.sellucosebook.data.repository.AuthRepository
+import com.sellucose.sellucosebook.data.pref.UserPreference
+import com.sellucose.sellucosebook.data.pref.dataStore
+import com.sellucose.sellucosebook.data.remote.auth.AuthConfig
+import com.sellucose.sellucosebook.data.remote.auth.AuthService
+import com.sellucose.sellucosebook.data.remote.book.SavedBookConfig
+import com.sellucose.sellucosebook.data.remote.book.SavedBookService
+import com.sellucose.sellucosebook.data.repository.SavedBookRepository
 
 object Injection {
 
@@ -18,17 +18,17 @@ object Injection {
         return AuthRepository.getInstance(authService, userPreference)
     }
 
-    fun provideBookRepository(context: Context): BookRepository {
+    fun provideSavedBookRepository(context: Context): SavedBookRepository {
         val bookService = provideBookService(context)
         val userPreference = UserPreference.getInstance(context.dataStore)
-        return BookRepository.getInstance(bookService, userPreference)
+        return SavedBookRepository.getInstance(bookService, userPreference)
     }
 
     private fun provideAuthService(): AuthService {
         return AuthConfig.getApiService()
     }
 
-    private fun provideBookService(context: Context): BookService {
-        return BookConfig.getApiService(context)
+    private fun provideBookService(context: Context): SavedBookService {
+        return SavedBookConfig.getApiService(context)
     }
 }

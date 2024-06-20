@@ -1,25 +1,25 @@
-package com.dicoding.picodiploma.loginwithanimation.view
+package com.sellucose.sellucosebook.ui
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.picodiploma.loginwithanimation.data.repository.AuthRepository
-import com.dicoding.picodiploma.loginwithanimation.data.repository.BookRepository
 import com.dicoding.picodiploma.loginwithanimation.di.Injection
-import com.dicoding.picodiploma.loginwithanimation.view.login.LoginViewModel
-import com.dicoding.picodiploma.loginwithanimation.view.main.MainViewModel
-import com.dicoding.picodiploma.loginwithanimation.view.signup.SignupViewModel
+import com.sellucose.sellucosebook.data.repository.AuthRepository
+import com.sellucose.sellucosebook.data.repository.SavedBookRepository
+import com.sellucose.sellucosebook.ui.login.LoginViewModel
+import com.sellucose.sellucosebook.ui.saved.SavedViewModel
+import com.sellucose.sellucosebook.ui.signup.SignupViewModel
 
 class ViewModelFactory private constructor(
     private val authRepository: AuthRepository,
-    private val bookRepository: BookRepository
+    private val savedBookRepository: SavedBookRepository
 ) : ViewModelProvider.NewInstanceFactory() {
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
-            modelClass.isAssignableFrom(MainViewModel::class.java) -> {
-                MainViewModel(authRepository, bookRepository) as T
+            modelClass.isAssignableFrom(SavedViewModel::class.java) -> {
+                SavedViewModel(authRepository, savedBookRepository) as T
             }
             modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
                 LoginViewModel(authRepository) as T
@@ -40,7 +40,7 @@ class ViewModelFactory private constructor(
                 synchronized(ViewModelFactory::class.java) {
                     INSTANCE = ViewModelFactory(
                         Injection.provideAuthRepository(context),
-                        Injection.provideBookRepository(context)
+                        Injection.provideSavedBookRepository(context)
                     )
                 }
             }
